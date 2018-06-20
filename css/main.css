@@ -1526,6 +1526,9 @@ pre .javascript .function {
   font-size: 14px;
   margin-top: 2px;
 }
+.post-wordcount {
+  display: inline-block;
+}
 .post-meta-divider {
   margin: 0 0.5em;
 }
@@ -1621,8 +1624,8 @@ pre .javascript .function {
 }
 .posts-expand .post-eof {
   display: block;
-  width: 8%;
-  height: 1px;
+  width: 0px;
+  height: 0px;
   background: #ccc;
   text-align: center;
 }
@@ -1693,11 +1696,6 @@ pre .javascript .function {
   max-width: 100%;
   display: inline-block;
   margin: 0.8em 2em 0 2em;
-}
-#wechat:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
 }
 #alipay:hover p {
   animation: roll 0.1s infinite linear;
@@ -1772,13 +1770,6 @@ pre .javascript .function {
     -o-transform: rotateZ(-30deg);
     transform: rotateZ(-30deg);
   }
-}
-.post-copyright {
-  margin: 2em 0 0;
-  padding: 0.5em 1em;
-  border-left: 3px solid #ff1700;
-  background-color: #f9f9f9;
-  list-style: none;
 }
 .rtl.post-body p,
 .rtl.post-body a,
@@ -2014,7 +2005,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #298cff;
+  background: #6f8785;
 }
 .links-of-blogroll {
   font-size: 13px;
