@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[这是新建的文章]]></title>
-    <url>%2F2018%2F06%2F20%2F%E8%BF%99%E6%98%AF%E6%96%B0%E5%BB%BA%E7%9A%84%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[如何利用Next主题对博客进行优化]]></title>
     <url>%2F2018%2F06%2F20%2F%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Next%E4%B8%BB%E9%A2%98%E5%AF%B9%E5%8D%9A%E5%AE%A2%E8%BF%9B%E8%A1%8C%E4%BC%98%E5%8C%96%2F</url>
     <content type="text"><![CDATA[博文前言 用Hexo初始化建的网站，其默认的风格比较传统和简陋，不符合我这个当代大学生的气质和要求。所以决定采用应该范围最广泛的Next主题。网上关于这一主题的资料也比较多，需要做些修改也很方便。主要是考虑到这一点。 准备工作 在D:\blog\目录下点击鼠标右键打开Git Bsah,执行命令git clone https://github.com/iissnan/hexo-theme-next themes/next/，将该项目克隆到themes/next/文件夹下。 以下是我在建此博客时，参考的博文和资料。读者可以根据这些资料可以个性化定制自己的博客网站。Hexo-Next-主题优化(一) Hexo-Next-主题优化(二) Hexo-Next-主题优化(三) Hexo-Next-主题优化(四) hexo的next主题个性化教程:打造炫酷网站 Hexo框架+NextT主题搭建博客教程 Next使用中文文档 进入正题 此处内容过于繁杂。我列出我的博客个性化定制的一些内容。 修改默认主题为next。 设置网站的标题，副标题，描述，作者,关键字等。 设置next主题的scheme。 设置侧边栏的菜单项的文本和图标,以及设置点击菜单项时的跳转界面。 鼠标点击出现小心心和爆炸效果。 更改博客的头像，设置头像边框为圆形，以及鼠标点击实现旋转效果。 浏览页面显示当前进度。 设置标签页面，以及设置每篇博客的标签。 设置侧边栏的社交链接和图标。 设置友情链接。 在左上角实现fork me on github。 修改每篇文章底部带#的标签。 添加页面进度加载条。 添加本地搜索。 修改网页底部。 添加统计功能：显示文章字数统计,阅读时长,总字数。 修改文章内的超链接样式。 在每篇文章末尾统一添加结束标志。 开启不蒜子博客访问量统计。 绑定腾讯云域名jinyuxin.club到mrkinghh.github.io。]]></content>
       <categories>
-        <category>软件使用</category>
+        <category>软件使用2</category>
       </categories>
       <tags>
         <tag>next主题</tag>
@@ -18,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hexo+github建站笔记]]></title>
-    <url>%2F2018%2F06%2F20%2FHexo-Next%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0%2F</url>
+    <url>%2F2018%2F06%2F20%2FHexo%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[博文前言 最近发现同学们都有了自己的技术博客，我也想搞一个自己的博客。于是买了阿里云的服务器和域名，准备大搞一番。结果发现前端对于我来说太痛苦了，真的是一点艺术细胞都没有，网上的模板又不尽如人意，于是不得不选择放弃。最近大家都流行在github上部署自己的个人博客，于是向同学请教了一番,此处特别感谢周住铭。加上在网上搜一搜教程，就开始捣鼓了起来。现将过程记录如下。 准备工作 因为Hexo是基于Node.js开发的，所以在使用这个工具之前，我们需要先下载Node.js的环境。点击此处进入Node.js官网,用node -v检查是否安装成功。安装Node.js的过程中，会默认安装npm命令。 安装好了Node.js之后，安装git和配置git。点击此处进入git官网，因为从github上克隆Next主题和部署到github的仓库时都需要git。 完成前两步之后，接下来在github上注册一个账号，并且新建一个仓库，仓库名为账户名.git.io，这样才能确保可以通过http://账户名.git.io访问你的主页。由于需要部署到github上，因此还需要在本机和github之间建立通信密码，这里我们使用ssh-key的方式。具体操作请参考博客。 安装Hexo。先在d盘下新建一个blog的文件夹，进入该文件夹目录。输入命令npm install hexo -g，开始安装Hexo。 安装结束之后，利用命令hexo -v验证是否安装成功。 进入正题 以上全部都是准备工作。利用命令hexo init初始化该文件夹。初始化之后，文件夹结构如下。 利用命令npm install安装所需要的组件。 利用hexo g生静态文件。 利用hexo s启动服务器。 在浏览器中输入localhost://4000查看博客的默认页面。 利用命令npm install hexo-deployer-git --save安装一个扩展，该扩展是用来将本地内容部署到github对应的仓库的。 配置部署的仓库。在bolg文件夹下的_config.yml中，找到deploy项，修改其值如图。。 利用hexo new [post | page | draft] &quot;blog name&quot;新建一篇博客页面。三种选择对应不同的三种方式。其中page对应博客中的非博文页面，主要是点击标签的跳转后的页面，比如404页面，归档页面，分类页面等等。draft代表博文的草稿，执行此命令，则会在D:\blog\source文件目录下生成一个_draft文件夹，用来存放博文草稿。post代表即将发布的博文，放在D:\blog\source\_post目录下。此处我们选择post来直接生成即将发布的博客正文。 利用hexo d将博客部署到github上。 利用http://mrkinghh.github.io访问我的博客主页。]]></content>
       <categories>
         <category>软件使用1</category>
