@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="博文前言 最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
+<meta name="description" content="博文前言 最近跟同学在做一个NBA新闻整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
 <meta name="keywords" content="scrapy,网络爬虫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Scrapy爬取网易NBA滚动新闻遇到的问题">
 <meta property="og:url" content="http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/index.html">
 <meta property="og:site_name" content="金余新的博客">
-<meta property="og:description" content="博文前言 最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
+<meta property="og:description" content="博文前言 最近跟同学在做一个NBA新闻整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-29T02:30:52.613Z">
+<meta property="og:updated_time" content="2018-06-29T03:07:01.858Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scrapy爬取网易NBA滚动新闻遇到的问题">
-<meta name="twitter:description" content="博文前言 最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
+<meta name="twitter:description" content="博文前言 最近跟同学在做一个NBA新闻整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
 
 
 
@@ -353,7 +353,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:30:52+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T11:07:01+08:00">
                 2018-06-29
               </time>
             
@@ -463,7 +463,7 @@
 
       
         <h2 id="博文前言"><a href="#博文前言" class="headerlink" title="博文前言"></a>博文前言</h2><hr>
-<p>最近跟同学在做一个NBA咨询整合的项目，项目的网址是：<a href="https://github.com/ACLoong/nba-tall" target="_blank" rel="noopener">https://github.com/ACLoong/nba-tall</a>. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到爬取二次url页面内容的时候，遇到了比较大的困难—没有办法拼接所有的p标签文本为一整段新闻主体。逼着我用scrapy的方法来解析网页。</p>
+<p>最近跟同学在做一个NBA新闻整合的项目，项目的网址是：<a href="https://github.com/ACLoong/nba-tall" target="_blank" rel="noopener">https://github.com/ACLoong/nba-tall</a>. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到爬取二次url页面内容的时候，遇到了比较大的困难—没有办法拼接所有的p标签文本为一整段新闻主体。逼着我用scrapy的方法来解析网页。</p>
 <h2 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h2><hr>
 <p>网易NBA滚动新闻的首页网址是：<a href="http://sports.163.com/special/nbagd2016/" target="_blank" rel="noopener">http://sports.163.com/special/nbagd2016/</a><br>下一页网址是：<a href="http://sports.163.com/special/nbagd2016_02/" target="_blank" rel="noopener">http://sports.163.com/special/nbagd2016_02/</a><br>下下一页的网址是：<a href="http://sports.163.com/special/nbagd2016_03/" target="_blank" rel="noopener">http://sports.163.com/special/nbagd2016_03/</a><br>下下下一页以此类推。我这次只爬了四个页面。<br><strong>这次爬虫需求如下:</strong>  </p>
 <ol>
@@ -513,7 +513,7 @@
   <p><span>本文标题:</span>Scrapy爬取网易NBA滚动新闻遇到的问题</a></p>
   <p><span>文章作者:</span>Samuel King</a></p>
   <p><span>发布时间:</span>2018年06月29日 - 10:17:36</p>
-  <p><span>最后更新:</span>2018年06月29日 - 10:30:52</p>
+  <p><span>最后更新:</span>2018年06月29日 - 11:07:01</p>
   <p><span>原始链接:</span><a href="/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/" title="Scrapy爬取网易NBA滚动新闻遇到的问题">http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/"  aria-label="复制成功！"></i></span>
   </p>
