@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="scrapy,网络爬虫," />
 
 
 
@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="这是我在github上部署的个人博客。">
-<meta name="keywords" content="金余新的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="金余新的博客">
-<meta property="og:url" content="http://jinyuxin.club/index.html">
+<meta name="description" content="博文前言 最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
+<meta name="keywords" content="scrapy,网络爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scrapy爬取网易NBA滚动新闻遇到的问题">
+<meta property="og:url" content="http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/index.html">
 <meta property="og:site_name" content="金余新的博客">
-<meta property="og:description" content="这是我在github上部署的个人博客。">
+<meta property="og:description" content="博文前言 最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-29T02:30:52.613Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="金余新的博客">
-<meta name="twitter:description" content="这是我在github上部署的个人博客。">
+<meta name="twitter:title" content="Scrapy爬取网易NBA滚动新闻遇到的问题">
+<meta name="twitter:description" content="博文前言 最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到">
 
 
 
@@ -128,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://jinyuxin.club/"/>
+  <link rel="canonical" href="http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/"/>
 
 
 
 
 
-  <title>金余新的博客</title>
+  <title>Scrapy爬取网易NBA滚动新闻遇到的问题 | 金余新的博客</title>
   
 
 
@@ -153,8 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
       <a href="https://github.com/MrkingHH"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
     </div>
@@ -293,9 +293,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -325,9 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/" itemprop="url">Scrapy爬取网易NBA滚动新闻遇到的问题</a></h1>
+          <h1 class="post-title" itemprop="name headline">Scrapy爬取网易NBA滚动新闻遇到的问题</h1>
         
 
         <div class="post-meta">
@@ -464,19 +462,37 @@
       
 
       
-        
-          
-          博文前言
-最近跟同学在做一个NBA咨询整合的项目，项目的网址是：https://github.com/ACLoong/nba-tall. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="博文前言"><a href="#博文前言" class="headerlink" title="博文前言"></a>博文前言</h2><hr>
+<p>最近跟同学在做一个NBA咨询整合的项目，项目的网址是：<a href="https://github.com/ACLoong/nba-tall" target="_blank" rel="noopener">https://github.com/ACLoong/nba-tall</a>. 此前写了一个爬取虎扑NBA新闻的爬虫，当时解决二次爬取网易内的URL的方式是：利用BeautifulSoup库+requests库，对解析出来的url进行再次爬取，因为当时解析二次url内容的时候比较容易，所以没有想到用scrapy的“自带”的方法。直到今天遇到爬取二次url页面内容的时候，遇到了比较大的困难—没有办法拼接所有的p标签文本为一整段新闻主体。逼着我用scrapy的方法来解析网页。</p>
+<h2 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h2><hr>
+<p>网易NBA滚动新闻的首页网址是：<a href="http://sports.163.com/special/nbagd2016/" target="_blank" rel="noopener">http://sports.163.com/special/nbagd2016/</a><br>下一页网址是：<a href="http://sports.163.com/special/nbagd2016_02/" target="_blank" rel="noopener">http://sports.163.com/special/nbagd2016_02/</a><br>下下一页的网址是：<a href="http://sports.163.com/special/nbagd2016_03/" target="_blank" rel="noopener">http://sports.163.com/special/nbagd2016_03/</a><br>下下下一页以此类推。我这次只爬了四个页面。<br><strong>这次爬虫需求如下:</strong>  </p>
+<ol>
+<li>爬取新闻标题，时间，url连接。</li>
+<li>顺着爬取的url接着爬取该url所在页面的新闻内容。  </li>
+</ol>
+<p><strong>这次爬取时遇到的问题如下:</strong>  </p>
+<ol>
+<li>BeautifulSoup库+requests库无法解析出页面的主体内容并完成拼接。</li>
+<li>不知道怎么用修改scrapy的wangyinews.py文件以使得其可以完成二次url的内容解析。</li>
+<li>不知道怎么将wangyinews.py和hupunews.py爬取的信息输出到不同的json文件。</li>
+<li>不明白为什么查看源代码时使用查找操作找到的p标签个数和用BeautifulSoup库的find_all(‘p’)的个数不一样。  </li>
+</ol>
+<p><strong>解决问题1、2办法如下:</strong></p>
+<ol>
+<li>在wangyinews.py文件中增加一个解析二次url的函数<code>parseContent(self,response)</code>。</li>
+<li>获取新闻标题，新闻url链接的实现放在parse函数里，然后对每一个已经获得标题和url链接的item，使用生成器，包装一个Request请求，包装如下：<code>Request(item[&#39;newsUrl&#39;],meta={&#39;item&#39;:item},callback=self.parseContent)</code>。其中meta表示提交给该url的信息，callback表示将response信息回调给parseContent()函数。</li>
+<li>再在parseContent()函数中，对新闻时间和新闻内容做解析。  </li>
+</ol>
+<p><strong>wangyuinews.py具体代码如下:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-</span><br><span class="line">import scrapy</span><br><span class="line">import requests</span><br><span class="line">from nbanews.items import  WangyinewsItem</span><br><span class="line">from scrapy.http import Request</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class WangyinewsSpider(scrapy.Spider):   </span><br><span class="line">    def parseContent(self, response):</span><br><span class="line">        #用来拼接新闻内容的空字符串</span><br><span class="line">        newsContent = &apos;&apos;</span><br><span class="line">        #从parse函数传过来的meta数据</span><br><span class="line">        item = response.meta[&apos;item&apos;]</span><br><span class="line">        #获取新闻的时间，并做了进一步的优化处理</span><br><span class="line">        newsTime = response.xpath(&apos;//div[@class=&quot;post_time_source&quot;]/text()&apos;).extract()[0].replace(&apos;   &apos;,&apos;&apos;).replace(&apos;\n&apos;,&apos;&apos;).replace(&apos;来源:&apos;,&apos;&apos;)</span><br><span class="line">        #获取新闻内容</span><br><span class="line">        subSelector = response.xpath(&apos;//div[@class=&quot;post_text&quot;]/p//text()&apos;)</span><br><span class="line">        for sub in subSelector:</span><br><span class="line">            newsContent += sub.extract()</span><br><span class="line">        item[&apos;newsContent&apos;] = newsContent.replace(&apos;\n&apos;,&apos;&apos;)</span><br><span class="line">        item[&apos;newsTime&apos;] = newsTime</span><br><span class="line">        #返回新闻，每次返回一个，就释放内存，速度快，而不是一次性返回列表</span><br><span class="line">        yield item</span><br><span class="line"></span><br><span class="line">    def parse(self, response):</span><br><span class="line">        items = []</span><br><span class="line">        #找到新闻列表</span><br><span class="line">        sub = response.xpath(&apos;//div[@class=&quot;news_item&quot;]&apos;)</span><br><span class="line">        #获取新闻列表长度</span><br><span class="line">        length = len(sub)</span><br><span class="line">        #解析出所有新闻的标题和链接</span><br><span class="line">        for i in range(0,length):</span><br><span class="line">            item = WangyinewsItem()</span><br><span class="line">            #解析新闻标题</span><br><span class="line">            item[&apos;newsTitle&apos;] = sub[i].xpath(&apos;./h3/a/text()&apos;).extract()[0]</span><br><span class="line">            #解析新闻url</span><br><span class="line">            newsUrl = sub[i].xpath(&apos;./h3/a/@href&apos;).extract()[0]</span><br><span class="line">            item[&apos;newsUrl&apos;] = newsUrl</span><br><span class="line">            item[&apos;newsSrc&apos;] = &apos;2&apos;</span><br><span class="line">            #把该新闻放到新闻列表里</span><br><span class="line">            items.append(item)</span><br><span class="line">        #对每一个列表里的每一条新闻，根据其url调用crapy.http.Request()函数,并将item传给callback指定的parseContent函数</span><br><span class="line">        for item in items:</span><br><span class="line">            yield Request(item[&apos;newsUrl&apos;], meta=&#123;&apos;item&apos;:item&#125;, callback=self.parseContent)</span><br></pre></td></tr></table></figure></p>
+<p><strong>解决问题3办法如下:</strong>  </p>
+<ol>
+<li>在items.py文件里增加两个items类，一个是HupunewsItem类，一个是WangyinewsItem类。</li>
+<li>在怎么处理数据的pipelines2json.py文件里增加一个isinstance的判断。判断当前item是什么类。</li>
+</ol>
+<p><strong>items.py具体代码如下:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">import scrapy</span><br><span class="line"></span><br><span class="line">class HupunewsItem(scrapy.Item):</span><br><span class="line">    # define the fields for your item here like:</span><br><span class="line">    # name = scrapy.Field()</span><br><span class="line">    #新闻标题</span><br><span class="line">    newsTitle = scrapy.Field()</span><br><span class="line">    #新闻时间</span><br><span class="line">    newsTime = scrapy.Field()</span><br><span class="line">    #新闻url</span><br><span class="line">    newsUrl = scrapy.Field()</span><br><span class="line">    #新闻内容</span><br><span class="line">    newsContent = scrapy.Field()</span><br><span class="line">    #新闻来源平台</span><br><span class="line">    newsSrc = scrapy.Field()</span><br><span class="line">class WangyinewsItem(scrapy.Item):</span><br><span class="line">    # define the fields for your item here like:</span><br><span class="line">    # name = scrapy.Field()</span><br><span class="line">    #新闻标题</span><br><span class="line">    newsTitle = scrapy.Field()</span><br><span class="line">    #新闻时间</span><br><span class="line">    newsTime = scrapy.Field()</span><br><span class="line">    #新闻url</span><br><span class="line">    newsUrl = scrapy.Field()</span><br><span class="line">    #新闻内容</span><br><span class="line">    newsContent = scrapy.Field()</span><br><span class="line">    #新闻来源平台</span><br><span class="line">    newsSrc = scrapy.Field()</span><br></pre></td></tr></table></figure></p>
+<p><strong>pipelines2json.py具体代码如下:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">import json</span><br><span class="line">import codecs</span><br><span class="line">from nbanews.items import HupunewsItem</span><br><span class="line">from nbanews.items import WangyinewsItem</span><br><span class="line">class NbanewsPipeline(object):</span><br><span class="line">    #怎么处理提取到的新闻</span><br><span class="line">    def process_item(self, item, spider):</span><br><span class="line">        today = time.strftime(&apos;%Y-%m-%d-%H&apos;,time.localtime())#返回指定格式的时间字符串，年-月-日，用来做文件名称</span><br><span class="line">        if isinstance(item, HupunewsItem):</span><br><span class="line">            fileName = today + &apos;hupu.json&apos;</span><br><span class="line">            #先将items里的文件写入到txt文本里,已追加的方式写,一行为一个item，写完之后换行，item的内部元素之间以制表符\t隔开</span><br><span class="line">            with codecs.open(fileName,&apos;a&apos;,encoding = &apos;utf8&apos;) as f:</span><br><span class="line">                line = json.dumps(dict(item),ensure_ascii=False)+&apos;\n&apos;</span><br><span class="line">                f.write(line)</span><br><span class="line">                time.sleep(3)</span><br><span class="line">        elif isinstance(item, WangyinewsItem):</span><br><span class="line">            fileName = today + &apos;wangyi.json&apos;</span><br><span class="line">            #先将items里的文件写入到txt文本里,已追加的方式写,一行为一个item，写完之后换行，item的内部元素之间以制表符\t隔开</span><br><span class="line">            with codecs.open(fileName,&apos;a&apos;,encoding = &apos;utf8&apos;) as f:</span><br><span class="line">                line = json.dumps(dict(item),ensure_ascii=False)+&apos;\n&apos;</span><br><span class="line">                f.write(line)</span><br><span class="line">                time.sleep(3)</span><br><span class="line">        return item</span><br></pre></td></tr></table></figure></p>
+<p>至此，问题解决。</p>
+
       
     </div>
     
@@ -484,6 +500,40 @@
     
 
     <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>Scrapy爬取网易NBA滚动新闻遇到的问题</a></p>
+  <p><span>文章作者:</span>Samuel King</a></p>
+  <p><span>发布时间:</span>2018年06月29日 - 10:17:36</p>
+  <p><span>最后更新:</span>2018年06月29日 - 10:30:52</p>
+  <p><span>原始链接:</span><a href="/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/" title="Scrapy爬取网易NBA滚动新闻遇到的问题">http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"></a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
       
     </div>
     
@@ -491,469 +541,76 @@
     
     <div>
        
+       <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+       
     </div>
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat-reward-image.jpg" alt="Samuel King 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://jinyuxin.club/2018/06/21/Next美化博客遇到的棘手的问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Samuel King">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="金余新的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/21/Next美化博客遇到的棘手的问题/" itemprop="url">Next美化博客遇到的棘手的问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-21T08:03:58+08:00">
-                2018-06-21
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:30:51+08:00">
-                2018-06-29
-              </time>
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/bug汇总/" itemprop="url" rel="index">
-                    <span itemprop="name">bug汇总</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/scrapy/" rel="tag"><i class="fa fa-tag"></i> scrapy</a>
           
-
+            <a href="/tags/网络爬虫/" rel="tag"><i class="fa fa-tag"></i> 网络爬虫</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/06/21/Next美化博客遇到的棘手的问题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/06/21/Next美化博客遇到的棘手的问题/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/06/21/Next美化博客遇到的棘手的问题/" class="leancloud_visitors" data-flag-title="Next美化博客遇到的棘手的问题">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  973
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          博文前言
-从开始创建博客到现在初具规模，满打满算大概花了整整两天的时间，其中还包括昨天在实验室通宵到两点多，然后接着把西班牙的球赛看完了，不得不说西班牙的足球踢得真好啊。这几天中，几乎把所有的精力都放在研究怎么创建博客上面。总结一下我的过程，基本上就是在网上找各种教程，跟着教程一步一步走，但是我发现
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/21/Next美化博客遇到的棘手的问题/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/21/Next美化博客遇到的棘手的问题/" rel="next" title="Next美化博客遇到的棘手的问题">
+                <i class="fa fa-chevron-left"></i> Next美化博客遇到的棘手的问题
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    <div>
-      
-    </div>
-    
-    
-    
-    <div>
-       
-    </div>
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://jinyuxin.club/2018/06/20/如何利用Next主题对博客进行优化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Samuel King">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="金余新的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/20/如何利用Next主题对博客进行优化/" itemprop="url">如何利用Next主题对博客进行优化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-20T15:58:29+08:00">
-                2018-06-20
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:26:15+08:00">
-                2018-06-29
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件使用/" itemprop="url" rel="index">
-                    <span itemprop="name">软件使用</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/06/20/如何利用Next主题对博客进行优化/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/06/20/如何利用Next主题对博客进行优化/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/06/20/如何利用Next主题对博客进行优化/" class="leancloud_visitors" data-flag-title="如何利用Next主题对博客进行优化">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  561
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          博文前言
-用Hexo初始化建的网站，其默认的风格比较传统和简陋，不符合我这个当代大学生的气质和要求。所以决定采用应该范围最广泛的Next主题。网上关于这一主题的资料也比较多，需要做些修改也很方便。主要是考虑到这一点。
-准备工作
-
-在D:\blog\目录下点击鼠标右键打开Git Bsah,执行命令gi
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/20/如何利用Next主题对博客进行优化/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    <div>
-      
-    </div>
-    
-    
-    
-    <div>
-       
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -963,232 +620,37 @@
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://jinyuxin.club/2018/06/20/Hexo建站笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Samuel King">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="金余新的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/20/Hexo建站笔记/" itemprop="url">Hexo+github建站笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-20T13:21:45+08:00">
-                2018-06-20
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:26:11+08:00">
-                2018-06-29
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件使用/" itemprop="url" rel="index">
-                    <span itemprop="name">软件使用</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/06/20/Hexo建站笔记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/06/20/Hexo建站笔记/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/06/20/Hexo建站笔记/" class="leancloud_visitors" data-flag-title="Hexo+github建站笔记">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  793
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          博文前言
-最近发现同学们都有了自己的技术博客，我也想搞一个自己的博客。于是买了阿里云的服务器和域名，准备大搞一番。结果发现前端对于我来说太痛苦了，真的是一点艺术细胞都没有，网上的模板又不尽如人意，于是不得不选择放弃。最近大家都流行在github上部署自己的个人博客，于是向同学请教了一番,此处特别感谢
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/20/Hexo建站笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
       
     </div>
-    
-    
-    
-
-    <div>
-      
-    </div>
-    
-    
-    
-    <div>
-       
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1196,6 +658,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1218,8 +694,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1329,6 +814,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#博文前言"><span class="nav-number">1.</span> <span class="nav-text">博文前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进入正题"><span class="nav-number">2.</span> <span class="nav-text">进入正题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1484,6 +985,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1501,6 +1006,18 @@
       <script id="dsq-count-scr" src="https://Samuel King.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://jinyuxin.club/2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/';
+          this.page.identifier = '2018/06/29/Scrapy爬取网易NBA滚动新闻遇到的问题/';
+          this.page.title = 'Scrapy爬取网易NBA滚动新闻遇到的问题';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://Samuel King.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
